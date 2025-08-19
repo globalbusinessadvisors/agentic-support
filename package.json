@@ -1,0 +1,63 @@
+{
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "better-sqlite3": "^12.2.0",
+    "claude-flow": "^2.0.0-alpha.86",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "imapflow": "^1.0.194",
+    "nodemailer": "^7.0.5",
+    "octokit": "^5.0.3",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  },
+  "name": "agentic-support",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "docker:build": "docker build -t agentic-support .",
+    "docker:run": "docker run -p 3000:3000 --env-file .env agentic-support",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop ecosystem.config.js",
+    "pm2:restart": "pm2 restart ecosystem.config.js",
+    "pm2:logs": "pm2 logs",
+    "setup": "npm install && cp .env.example .env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globalbusinessadvisors/agentic-support.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/globalbusinessadvisors/agentic-support/issues"
+  },
+  "homepage": "https://github.com/globalbusinessadvisors/agentic-support#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "msw": "^2.10.5",
+    "supertest": "^7.1.4",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  agentic-support:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agentic-support
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - support-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: QuDAG node for enhanced agent capabilities
+  qudag-node:
+    image: qudag/node:latest
+    container_name: qudag-node
+    restart: unless-stopped
+    ports:
+      - "8545:8545"  # RPC port
+      - "30303:30303" # P2P port
+    volumes:
+      - ./qudag-data:/data
+    networks:
+      - support-network
+    command: ["--testnet", "--rpc", "--rpcaddr", "0.0.0.0"]
+
+networks:
+  support-network:
+    driver: bridge
+
+volumes:
+  data:
+  logs:
+  qudag-data:
