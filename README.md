@@ -1,6 +1,56 @@
+<div align="center">
+
 # 🤖 Agentic Support System
 
-A minimal TypeScript backend that seamlessly integrates email support with GitHub Issues, powered by Reuven Cohen's QuDAG autonomous agent system for intelligent triage, summarization, and automated responses.
+<p align="center">
+  <strong>Intelligent Email-to-GitHub Support Platform with Autonomous AI Agents</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/yourusername/agentic-support/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/yourusername/agentic-support/ci.yml?branch=main&style=flat-square&logo=github&label=CI" alt="CI Status">
+  </a>
+  <a href="https://github.com/yourusername/agentic-support/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License">
+  </a>
+  <a href="https://github.com/yourusername/agentic-support/releases">
+    <img src="https://img.shields.io/github/v/release/yourusername/agentic-support?style=flat-square&logo=github" alt="GitHub release">
+  </a>
+  <a href="https://nodejs.org">
+    <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen?style=flat-square&logo=node.js" alt="Node Version">
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript" alt="TypeScript">
+  </a>
+  <a href="https://github.com/yourusername/agentic-support/issues">
+    <img src="https://img.shields.io/github/issues/yourusername/agentic-support?style=flat-square" alt="Issues">
+  </a>
+  <a href="https://github.com/yourusername/agentic-support/pulls">
+    <img src="https://img.shields.io/github/issues-pr/yourusername/agentic-support?style=flat-square" alt="Pull Requests">
+  </a>
+  <a href="https://github.com/yourusername/agentic-support/stargazers">
+    <img src="https://img.shields.io/github/stars/yourusername/agentic-support?style=flat-square" alt="Stars">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-architecture">Architecture</a> •
+  <a href="#-deployment">Deployment</a> •
+  <a href="#-documentation">Docs</a> •
+  <a href="#-contributing">Contributing</a>
+</p>
+
+<hr>
+
+<p align="center">
+  <strong>Transform your customer support with AI-powered automation</strong><br>
+  Seamlessly bridge email support with GitHub Issues, powered by <a href="https://github.com/ruvnet/QuDAG">Reuven Cohen's QuDAG</a> autonomous agent system<br>
+  for intelligent triage, summarization, and automated responses.
+</p>
+
+</div>
 
 ## 🌟 Features
 
