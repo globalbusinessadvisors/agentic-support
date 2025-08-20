@@ -339,7 +339,15 @@ Approve or reject an agent action.
 
 ## 📄 License
 
-ISC License - see LICENSE file
+```
+MIT License
+
+Copyright (c) 2025 Global Business Advisors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction...
+```
 
 ## 🙏 Acknowledgments
 
@@ -352,7 +360,6 @@ ISC License - see LICENSE file
 
 For issues or questions:
 - Open an issue on GitHub
-- Email: support@yourdomain.com
 - Documentation: [Wiki](https://github.com/yourusername/agentic-support/wiki)
 
 ---
