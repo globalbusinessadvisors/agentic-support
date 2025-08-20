@@ -1,6 +1,6 @@
 # 🤖 Agentic Support System
 
-A minimal TypeScript backend that seamlessly integrates email support with GitHub Issues, powered by Reuven Cohen's QuDAG/QuDAGG autonomous agent system for intelligent triage, summarization, and automated responses.
+A minimal TypeScript backend that seamlessly integrates email support with GitHub Issues, powered by Reuven Cohen's QuDAG autonomous agent system for intelligent triage, summarization, and automated responses.
 
 ## 🌟 Features
 
